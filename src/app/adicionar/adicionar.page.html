@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <h2>Adicionar itens</h2>
+    <ion-button>
+      <ion-back-button>
+      </ion-back-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #form="ngForm" (ngSubmit)="adicionar(form)">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Adicionar item</ion-label>
+        <ion-input placeholder="Digite o item" type="text" name="item" ngModel></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Adicionar quantia</ion-label>
+        <ion-input placeholder="Digite a quantia" type="number" name="quantia" ngModel></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-row>
+      <ion-col>
+        <ion-button color="success" expand="block" type="submit">{{additem}}</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>

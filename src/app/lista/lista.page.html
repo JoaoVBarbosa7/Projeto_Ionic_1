@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <h2>Sua lista</h2>
+    <ion-button>
+      <ion-back-button>
+      </ion-back-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3><strong>PRODUTOS: </strong></h3>
+
+  <ion-list lines="inset" *ngFor="let produto of meusProdutos">
+    <ion-item>
+      <ion-label>{{ produto.item }} | {{ produto.quantia}} </ion-label>
+      <ion-button class="btn btn-danger btn-block shadow d-flex justify-content-center" (click)="deletar(produto.id)" color="danger">Excluir<ion-icon name="trash"></ion-icon></ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

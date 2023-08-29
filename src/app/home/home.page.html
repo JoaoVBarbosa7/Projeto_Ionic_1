@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="light" mode="ios">
+    <ion-title color="dark">
+      {{titulo}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h2>Bem vindo a lista dinâmica!</h2>
+
+
+  <ion-row>
+    <ion-col>
+      <ion-button routerLink="/lista" expand="block">Checar lista</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button routerLink="/adicionar" color="success" expand="block">Adicionar itens</ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

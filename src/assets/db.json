@@ -1,0 +1,29 @@
+{
+  "Lista": [
+    {
+      "item": "Arroz",
+      "quantia": 2,
+      "id": 1
+    },
+    {
+      "item": "Sabão",
+      "quantia": 3,
+      "id": 3
+    },
+    {
+      "item": "polvilho",
+      "quantia": 10,
+      "id": 5
+    },
+    {
+      "item": "Tomate",
+      "quantia": 13,
+      "id": 6
+    },
+    {
+      "item": "Carne moida",
+      "quantia": 10,
+      "id": 7
+    }
+  ]
+}
